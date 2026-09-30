@@ -2,6 +2,8 @@
 
 This repository holds a few PowerShell scripts for running [Libratory](https://github.com/subev/libratory) (a local PDF-to-audiobook workbench) on a Windows PC using its **official Docker deployment**.
 
+**GitHub stores this management project; Libratory itself runs on your own laptop.** Only the scripts and this documentation live in the repository. The application, its database, your books, the generated audio and the downloaded models all stay on the PC, inside Docker volumes, and are never uploaded anywhere.
+
 It does not contain Libratory itself. The scripts wrap the upstream install command:
 
 ```

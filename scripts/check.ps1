@@ -126,5 +126,5 @@ if ($failures -gt 0) {
     Write-Fail "$failures problem(s) found. Fix the items marked [FAIL] above, then run this check again."
     exit 1
 }
-Write-Ok 'All prerequisites look good. Next:  .\scripts\start.ps1'
+Write-Ok 'Ready to start Libratory. Run:  .\scripts\start.ps1'
 exit 0
