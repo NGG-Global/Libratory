@@ -1,0 +1,87 @@
+# This repo holds scripts and docs only. Libratory's data lives in Docker volumes;
+# these rules stop stray copies of it (exports, backups, downloads) from being committed.
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+*.secret
+secrets.*
+credentials.*
+
+# --- Books and documents ---
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.fb2
+
+# --- Audio output ---
+*.m4b
+*.m4a
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.opus
+*.aac
+*.wma
+
+# --- Models ---
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.bin
+*.npz
+models/
+.cache/
+
+# --- Databases and backups ---
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+*.backup
+backups/
+pgdata*/
+
+# --- Runtime / temporary data ---
+data/
+library/
+exports/
+runtime/
+tmp/
+temp/
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS clutter ---
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# --- Editors / tools ---
+.vscode/
+.idea/
+*.swp
+*~
+.claude/settings.local.json
